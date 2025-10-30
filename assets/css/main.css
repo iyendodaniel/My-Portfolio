@@ -1353,6 +1353,34 @@ section,
   font-family: var(--heading-font);
 }
 
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.tech-item {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-item i {
+  color: #007bff;
+  font-size: 1.3rem;
+}
+
+
 .skills .skills-container {
   padding-right: 40px;
 }
